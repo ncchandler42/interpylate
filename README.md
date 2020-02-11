@@ -1,6 +1,8 @@
 # interPylate
 Quick Tk interface to get accurate values off of a graph
 
+### !!! CURRENTLY BROKEN DO NOT USE !!!
+
 ## How?
 To use, run the script to open the main window. Set the axes' ranges from the graph using the boxes on the right,
 and then click the "Set points" buttons to click those same coordinates on the screen. Once both axes are set, 
