@@ -1,5 +1,5 @@
 # interPylate
-Quick Tk interface to get accurate values off of a graph
+Quick Python Tk interface to get accurate values off of a graph
 
 ## How?
 To use, run the script to open the main window. Set the axes' ranges from the graph using the boxes on the right,
