@@ -179,6 +179,7 @@ class MainScreen:
 	def evalpoint(self, x, y):
 		pt_abs = (x, y)
 		self.update_mouseabs(*pt_abs)
+		
 		# shift origin to clicked points
 		pt_relorg = (pt_abs[0] - self.xaxis_absrange[0], pt_abs[1] - self.yaxis_absrange[0])
 
@@ -186,7 +187,7 @@ class MainScreen:
 		xmult = (self.xaxis_relrange[1] - self.xaxis_relrange[0])/(self.xaxis_absrange[1] - self.xaxis_absrange[0])
 		ymult = (self.yaxis_relrange[1] - self.yaxis_relrange[0])/(self.yaxis_absrange[1] - self.yaxis_absrange[0])
 
-		pt_rel = (pt_relorg[0]*xmult, pt_relorg[1]*ymult)
+		pt_rel = (pt_relorg[0]*xmult + self.xaxis_relrange[0], pt_relorg[1]*ymult + self.yaxis_relrange[0])
 		self.update_mouserel(*pt_rel)
 		
 	def setxaxis(self):
