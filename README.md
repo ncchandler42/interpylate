@@ -1,5 +1,5 @@
 # interPylate
-Quick Tk interface to get accurate values off of a graph
+Quick Python Tk interface to get accurate values off of a graph
 
 ### !!! CURRENTLY BROKEN DO NOT USE !!!
 
